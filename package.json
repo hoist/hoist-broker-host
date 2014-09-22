@@ -30,6 +30,7 @@
   },
   "dependencies": {
     "broker": "git://github.com/hoist/broker",
-    "config": "^1.2.0"
+    "config": "^1.2.0",
+    "hoist-model": "git://github.com/hoist/hoist-model"
   }
 }
