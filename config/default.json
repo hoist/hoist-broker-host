@@ -3,7 +3,7 @@
     "db": "mongodb://localhost/hoist-default"
   },
   "timers": {
-    "subscriptionTimeout": 5000,
-    "listenTimeout": 5000
+    "subscriptionTimeout": 50000,
+    "listenTimeout": 50000
   }
 }
