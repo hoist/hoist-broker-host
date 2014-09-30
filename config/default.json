@@ -1,5 +1,9 @@
 {
-    "mongo":{
-        "db":"mongodb://localhost/hoist-default"
-    }
+  "mongo": {
+    "db": "mongodb://localhost/hoist-default"
+  },
+  "timers": {
+    "subscriptionTimeout": 5000,
+    "listenTimeout": 5000
+  }
 }
