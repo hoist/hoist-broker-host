@@ -1,5 +1,7 @@
 {
-    "mongo":{
-        "db":"mongodb://localhost/hoist-test"
+  "Hoist": {
+    "mongo": {
+      "db": "mongodb://localhost/hoist-test"
     }
+  }
 }
