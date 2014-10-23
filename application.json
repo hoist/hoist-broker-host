@@ -1,14 +1,13 @@
 [{
   "name": "hoist-broker-host",
-  "script": "./lib/application_event_host.js",
-  "log_date_format": "YYYY-MM-DD HH:mm Z",
+  "script": "./app.js",
+  "cwd": "./",
+  "log_date_format": "YYYY-MM-DD HH:mm:ss Z",
   "error_file": "/var/log/node/hoist-broker-host.stderr.log",
   "out_file": "/var/log/node/hoist-broker-host.stdout.log",
-  "pid_file": "./pids/hoist-broker-host.pid",
-  "instances": "max",
-  "cron_restart": "01 00 * * 0",
+  "instances": "1",
   "merge_logs": true,
-  "exec_mode": "cluster_mode",
+  "exec_mode": "fork_mode",
   "env": {
     "NODE_ENV": "production"
   }
