@@ -1,6 +1,6 @@
 [{
   "name": "hoist-broker-host",
-  "script": "./app.js",
+  "script": "./lib/application_event_host.js",
   "cwd": "./",
   "log_date_format": "YYYY-MM-DD HH:mm:ss Z",
   "error_file": "/var/log/node/hoist-broker-host.stderr.log",
