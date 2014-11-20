@@ -6,6 +6,15 @@
     "timers": {
       "subscriptionTimeout": 50000,
       "listenTimeout": 50000
+    },
+    "messageBus": {
+      "type": "sqs"
+    },
+    "aws": {
+      "account": "awsaccount",
+      "secret": "secret",
+      "region": "awsregion",
+      "prefix": "DEVELOPMENT_"
     }
   }
 }
