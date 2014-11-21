@@ -29,7 +29,7 @@
     "sinon-chai": "^2.5.0"
   },
   "dependencies": {
-    "broker": "git://github.com/hoist/broker#feature/sqs_messaging",
+    "broker": "git://github.com/hoist/broker",
     "config": "^1.2.0",
     "hoist-logger": "git://github.com/hoist/hoist-logger",
     "hoist-model": "git://github.com/hoist/hoist-model"
