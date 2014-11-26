@@ -12,7 +12,7 @@ describe('application_event_host', function () {
   });
   it('subscribes to ApplicationEvents', function () {
     expect(EventBroker.prototype.listen)
-      .to.be.calledWith(EventBroker.events.ApplicationEvent);
+      .to.be.calledWith(require('../../lib/events/application_event'));
   });
   it('sets model for broker', function () {
     expect(EventBroker.ModelResolver.get())

@@ -29,9 +29,13 @@
     "sinon-chai": "^2.5.0"
   },
   "dependencies": {
+    "bluebird": "^2.3.11",
     "broker": "git://github.com/hoist/broker",
     "config": "^1.2.0",
     "hoist-logger": "git://github.com/hoist/hoist-logger",
-    "hoist-model": "git://github.com/hoist/hoist-model"
+    "hoist-model": "git://github.com/hoist/hoist-model",
+    "kue": "^0.8.9",
+    "lodash": "^2.4.1",
+    "moment": "^2.8.4"
   }
 }
