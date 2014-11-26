@@ -115,8 +115,7 @@ gulp.task('seq-test', function () {
 });
 gulp.task('test', function () {
   return gulp.start('jshint-build',
-    'mocha-server',
-    'enforce-coverage');
+    'mocha-server');
 });
 gulp.task('build', function () {
   return gulp.start('jshint-build',
