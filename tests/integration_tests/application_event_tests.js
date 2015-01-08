@@ -10,6 +10,7 @@ var sinon = require('sinon');
 var path = require('path');
 
 describe('application_event', function () {
+  this.timeout(30000);
   describe('with event description', function () {
     describe('with modules in event description', function () {
       describe('with no error in sending message', function () {
@@ -129,7 +130,6 @@ describe('application_event', function () {
         });
       });
       describe('with error in sending message ', function () {
-        this.timeout(5000);
         var _response;
         var applicationEvent;
         var jobData;
