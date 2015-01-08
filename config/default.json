@@ -11,9 +11,7 @@
       "type": "sqs"
     },
     "aws": {
-      "account": "awsaccount",
-      "secret": "secret",
-      "region": "awsregion",
+      "region": "ap-southeast-2",
       "prefix": "DEVELOPMENT_"
     }
   }
