@@ -27,7 +27,7 @@ describe('application_event', function () {
               slug: 'org'
             }).saveAsync(),
             new Model.Application({
-              _id: 'appid',
+              _id: 'appId',
               organisation: 'orgid',
               name: 'test app',
               apiKey: 'apiKey',
@@ -69,17 +69,8 @@ describe('application_event', function () {
             }).saveAsync()
           ]).then(function () {
             jobData = {
-              user: _appUser.toObject(),
-              event: {
-                eventId: 'eventId',
-                messageId: 'eventId',
-                correlationId: 'correlationId',
-                applicationId: 'appid',
-                eventName: 'eventName',
-                environment: 'test',
-                bucketId: 'bucketId',
-                sessionId: 'sessionId'
-              },
+              user: _appUser._id,
+              event: 'eventId',
               applicationPath: path.join('org', 'app', 'current'),
               modulePath: '../../file.js',
               moduleName: 'module',
@@ -90,7 +81,7 @@ describe('application_event', function () {
               title: 'running module module'
             };
             var properties = {
-              applicationId: 'appid',
+              applicationId: 'appId',
               eventName: 'eventName',
               environment: 'test',
               eventId: 'eventId',
@@ -119,8 +110,6 @@ describe('application_event', function () {
           });
         });
         it('sends the correct data to AWS', function () {
-          jobData.user.createdAt = jobData.user.createdAt.toISOString();
-          jobData.user.updatedAt = jobData.user.updatedAt.toISOString();
           var messageBody = applicationEvent.sqs.sendMessageAsync.args[0][0].MessageBody;
           expect(JSON.parse(messageBody))
             .to.be.eql(jobData);
@@ -143,7 +132,7 @@ describe('application_event', function () {
               slug: 'org'
             }).saveAsync(),
             new Model.Application({
-              _id: 'appid',
+              _id: 'appId',
               organisation: 'orgid',
               name: 'test app',
               apiKey: 'apiKey',
@@ -185,17 +174,8 @@ describe('application_event', function () {
             }).saveAsync()
           ]).then(function () {
             jobData = {
-              user: _appUser.toObject(),
-              event: {
-                eventId: 'eventId',
-                messageId: 'eventId',
-                correlationId: 'correlationId',
-                applicationId: 'appid',
-                eventName: 'eventName',
-                environment: 'test',
-                bucketId: 'bucketId',
-                sessionId: 'sessionId'
-              },
+              user: _appUser._id,
+              event: 'eventId',
               applicationPath: path.join('org', 'app', 'current'),
               modulePath: '../../file.js',
               moduleName: 'module',
@@ -205,10 +185,8 @@ describe('application_event', function () {
               },
               title: 'running module module'
             };
-            jobData.user.createdAt = jobData.user.createdAt.toISOString();
-            jobData.user.updatedAt = jobData.user.updatedAt.toISOString();
             var properties = {
-              applicationId: 'appid',
+              applicationId: 'appId',
               eventName: 'eventName',
               environment: 'test',
               eventId: 'eventId',
@@ -268,7 +246,7 @@ describe('application_event', function () {
             slug: 'org'
           }).saveAsync(),
           new Model.Application({
-            _id: 'appid',
+            _id: 'appId',
             organisation: 'orgid',
             name: 'test app',
             apiKey: 'apiKey',
@@ -310,17 +288,8 @@ describe('application_event', function () {
           }).saveAsync()
         ]).then(function () {
           jobData = {
-            user: _appUser.toObject(),
-            event: {
-              eventId: 'eventId',
-              messageId: 'eventId',
-              correlationId: 'correlationId',
-              applicationId: 'appid',
-              eventName: 'eventName',
-              environment: 'test',
-              bucketId: 'bucketId',
-              sessionId: 'sessionId'
-            },
+            user: _appUser._id,
+            event: 'eventId',
             applicationPath: path.join('org', 'app', 'current'),
             modulePath: '../../file.js',
             moduleName: 'module',
@@ -331,7 +300,7 @@ describe('application_event', function () {
             title: 'running module module'
           };
           var properties = {
-            applicationId: 'appid',
+            applicationId: 'appId',
             eventName: 'eventName',
             environment: 'test',
             eventId: 'eventId',
@@ -384,7 +353,7 @@ describe('application_event', function () {
           slug: 'org'
         }).saveAsync(),
         new Model.Application({
-          _id: 'appid',
+          _id: 'appId',
           organisation: 'orgid',
           name: 'test app',
           apiKey: 'apiKey',
@@ -422,17 +391,8 @@ describe('application_event', function () {
         }).saveAsync()
       ]).then(function () {
         jobData = {
-          user: _appUser.toObject(),
-          event: {
-            eventId: 'eventId',
-            messageId: 'eventId',
-            correlationId: 'correlationId',
-            applicationId: 'appid',
-            eventName: 'eventName',
-            environment: 'test',
-            bucketId: 'bucketId',
-            sessionId: 'sessionId'
-          },
+          user: _appUser._id,
+          event: 'eventId',
           applicationPath: path.join('org', 'app', 'current'),
           modulePath: '../../file.js',
           moduleName: 'module',
@@ -443,7 +403,7 @@ describe('application_event', function () {
           title: 'running module module'
         };
         var properties = {
-          applicationId: 'appid',
+          applicationId: 'appId',
           eventName: 'eventName',
           environment: 'test',
           eventId: 'eventId',
