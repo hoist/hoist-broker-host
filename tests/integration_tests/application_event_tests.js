@@ -27,7 +27,7 @@ describe('application_event', function () {
               slug: 'org'
             }).saveAsync(),
             new Model.Application({
-              _id: 'appId',
+              _id: 'testAppId4',
               organisation: 'orgid',
               name: 'test app',
               apiKey: 'apiKey',
@@ -41,14 +41,14 @@ describe('application_event', function () {
                   },
                   modules: [{
                     name: 'module',
-                    src: '../../file.js'
+                    src: 'test_module.js'
                   }]
                 }
               }
             }).saveAsync(),
             new Model.AppUser({
-              _id: 'appUserId',
-              application: 'appId',
+              _id: 'appUserId4',
+              application: 'testAppId4',
               emailAddresses: [{
                 address: 'test@test.com'
               }],
@@ -58,33 +58,33 @@ describe('application_event', function () {
             }),
             new Model.Bucket({
               _id: 'bucketId',
-              application: 'appId',
+              application: 'testAppId4',
               environment: 'test'
             }).saveAsync(),
             new Model.Session({
               _id: 'sessionId',
-              appUser: 'appUserId',
-              application: 'appId',
+              appUser: 'appUserId4',
+              application: 'testAppId4',
               environment: 'test'
             }).saveAsync()
           ]).then(function () {
             jobData = {
               user: _appUser._id,
-              event: 'eventId',
+              event: 'eventId4',
               applicationPath: path.join('org', 'app', 'current'),
-              modulePath: '../../file.js',
+              modulePath: 'test_module.js',
               moduleName: 'module',
               module: {
-                src: '../../file.js',
+                src: 'test_module.js',
                 name: 'module'
               },
               title: 'running module module'
             };
             var properties = {
-              applicationId: 'appId',
+              applicationId: 'testAppId4',
               eventName: 'eventName',
               environment: 'test',
-              eventId: 'eventId',
+              eventId: 'eventId4',
               correlationId: 'correlationId',
               bucketId: 'bucketId',
               sessionId: 'sessionId'
@@ -132,7 +132,7 @@ describe('application_event', function () {
               slug: 'org'
             }).saveAsync(),
             new Model.Application({
-              _id: 'appId',
+              _id: 'testAppId4',
               organisation: 'orgid',
               name: 'test app',
               apiKey: 'apiKey',
@@ -146,14 +146,14 @@ describe('application_event', function () {
                   },
                   modules: [{
                     name: 'module',
-                    src: '../../file.js'
+                    src: 'test_module.js'
                   }]
                 }
               }
             }).saveAsync(),
             new Model.AppUser({
-              _id: 'appUserId',
-              application: 'appId',
+              _id: 'appUserId4',
+              application: 'testAppId4',
               emailAddresses: [{
                 address: 'test@test.com'
               }],
@@ -163,33 +163,33 @@ describe('application_event', function () {
             }),
             new Model.Bucket({
               _id: 'bucketId',
-              application: 'appId',
+              application: 'testAppId4',
               environment: 'test'
             }).saveAsync(),
             new Model.Session({
               _id: 'sessionId',
-              appUser: 'appUserId',
-              application: 'appId',
+              appUser: 'appUserId4',
+              application: 'testAppId4',
               environment: 'test'
             }).saveAsync()
           ]).then(function () {
             jobData = {
               user: _appUser._id,
-              event: 'eventId',
+              event: 'eventId4',
               applicationPath: path.join('org', 'app', 'current'),
-              modulePath: '../../file.js',
+              modulePath: 'test_module.js',
               moduleName: 'module',
               module: {
-                src: '../../file.js',
+                src: 'test_module.js',
                 name: 'module'
               },
               title: 'running module module'
             };
             var properties = {
-              applicationId: 'appId',
+              applicationId: 'testAppId4',
               eventName: 'eventName',
               environment: 'test',
-              eventId: 'eventId',
+              eventId: 'eventId4',
               correlationId: 'correlationId',
               bucketId: 'bucketId',
               sessionId: 'sessionId'
@@ -246,7 +246,7 @@ describe('application_event', function () {
             slug: 'org'
           }).saveAsync(),
           new Model.Application({
-            _id: 'appId',
+            _id: 'testAppId4',
             organisation: 'orgid',
             name: 'test app',
             apiKey: 'apiKey',
@@ -260,14 +260,14 @@ describe('application_event', function () {
                 },
                 modules: [{
                   name: 'module',
-                  src: '../../file.js'
+                  src: 'test_module.js'
                 }]
               }
             }
           }).saveAsync(),
           new Model.AppUser({
-            _id: 'appUserId',
-            application: 'appId',
+            _id: 'appUserId4',
+            application: 'testAppId4',
             emailAddresses: [{
               address: 'test@test.com'
             }],
@@ -277,33 +277,33 @@ describe('application_event', function () {
           }),
           new Model.Bucket({
             _id: 'bucketId',
-            application: 'appId',
+            application: 'testAppId4',
             environment: 'test'
           }).saveAsync(),
           new Model.Session({
             _id: 'sessionId',
-            appUser: 'appUserId',
-            application: 'appId',
+            appUser: 'appUserId4',
+            application: 'testAppId4',
             environment: 'test'
           }).saveAsync()
         ]).then(function () {
           jobData = {
             user: _appUser._id,
-            event: 'eventId',
+            event: 'eventId4',
             applicationPath: path.join('org', 'app', 'current'),
-            modulePath: '../../file.js',
+            modulePath: 'test_module.js',
             moduleName: 'module',
             module: {
-              src: '../../file.js',
+              src: 'test_module.js',
               name: 'module'
             },
             title: 'running module module'
           };
           var properties = {
-            applicationId: 'appId',
+            applicationId: 'testAppId4',
             eventName: 'eventName',
             environment: 'test',
-            eventId: 'eventId',
+            eventId: 'eventId4',
             correlationId: 'correlationId',
             bucketId: 'bucketId',
             sessionId: 'sessionId'
@@ -353,7 +353,7 @@ describe('application_event', function () {
           slug: 'org'
         }).saveAsync(),
         new Model.Application({
-          _id: 'appId',
+          _id: 'testAppId4',
           organisation: 'orgid',
           name: 'test app',
           apiKey: 'apiKey',
@@ -363,14 +363,14 @@ describe('application_event', function () {
               on: {},
               modules: [{
                 name: 'module',
-                src: '../../file.js'
+                src: 'test_module.js'
               }]
             }
           }
         }).saveAsync(),
         new Model.AppUser({
-          _id: 'appUserId',
-          application: 'appId',
+          _id: 'appUserId4',
+          application: 'testAppId4',
           emailAddresses: [{
             address: 'test@test.com'
           }],
@@ -380,33 +380,33 @@ describe('application_event', function () {
         }),
         new Model.Bucket({
           _id: 'bucketId',
-          application: 'appId',
+          application: 'testAppId4',
           environment: 'test'
         }).saveAsync(),
         new Model.Session({
           _id: 'sessionId',
-          appUser: 'appUserId',
-          application: 'appId',
+          appUser: 'appUserId4',
+          application: 'testAppId4',
           environment: 'test'
         }).saveAsync()
       ]).then(function () {
         jobData = {
           user: _appUser._id,
-          event: 'eventId',
+          event: 'eventId4',
           applicationPath: path.join('org', 'app', 'current'),
-          modulePath: '../../file.js',
+          modulePath: 'test_module.js',
           moduleName: 'module',
           module: {
-            src: '../../file.js',
+            src: 'test_module.js',
             name: 'module'
           },
           title: 'running module module'
         };
         var properties = {
-          applicationId: 'appId',
+          applicationId: 'testAppId4',
           eventName: 'eventName',
           environment: 'test',
-          eventId: 'eventId',
+          eventId: 'eventId4',
           correlationId: 'correlationId',
           bucketId: 'bucketId',
           sessionId: 'sessionId'
