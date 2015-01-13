@@ -71,6 +71,7 @@ describe('application_event', function () {
             jobData = {
               user: _appUser._id,
               event: 'eventId4',
+              application: 'testAppId4',
               applicationPath: path.join('org', 'app', 'current'),
               modulePath: 'test_module.js',
               moduleName: 'module',
@@ -176,6 +177,7 @@ describe('application_event', function () {
             jobData = {
               user: _appUser._id,
               event: 'eventId4',
+              application: 'testAppId4',
               applicationPath: path.join('org', 'app', 'current'),
               modulePath: 'test_module.js',
               moduleName: 'module',
@@ -290,6 +292,7 @@ describe('application_event', function () {
           jobData = {
             user: _appUser._id,
             event: 'eventId4',
+            application: 'testAppId4',
             applicationPath: path.join('org', 'app', 'current'),
             modulePath: 'test_module.js',
             moduleName: 'module',
@@ -393,6 +396,7 @@ describe('application_event', function () {
         jobData = {
           user: _appUser._id,
           event: 'eventId4',
+          application: 'testAppId4',
           applicationPath: path.join('org', 'app', 'current'),
           modulePath: 'test_module.js',
           moduleName: 'module',
