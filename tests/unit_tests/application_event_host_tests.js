@@ -10,6 +10,10 @@ describe('application_event_host', function () {
     sinon.stub(EventBroker.prototype, 'listen').callsArg(1);
     require('../../lib/application_event_host');
   });
+  after(function () {
+    mongoose.connect.restore();
+    EventBroker.prototype.listen.restore();
+  });
   it('subscribes to ApplicationEvents', function () {
     expect(EventBroker.prototype.listen)
       .to.be.calledWith(require('../../lib/events/application_event'));

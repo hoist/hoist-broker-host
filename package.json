@@ -29,6 +29,7 @@
     "sinon-chai": "^2.5.0"
   },
   "dependencies": {
+    "amqplib": "^0.3.1",
     "aws-sdk": "^2.1.4",
     "bluebird": "^2.3.11",
     "broker": "git://github.com/hoist/broker",
