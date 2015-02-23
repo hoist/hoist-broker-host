@@ -3,6 +3,10 @@
     "mongo": {
       "db": "mongodb://localhost/hoist-default"
     },
+    "rabbit": {
+      "url": "amqp://localhost",
+      "managementurl": "http://guest:guest@localhost:15672/"
+    },
     "timers": {
       "subscriptionTimeout": 50000,
       "listenTimeout": 50000
@@ -11,8 +15,10 @@
       "type": "sqs"
     },
     "aws": {
-      "region": "ap-southeast-2",
-      "prefix": "DEVELOPMENT_"
+      "account": "acc",
+      "secret": "sec",
+      "prefix": "DEVELOPMENT_",
+      "region": "ap-southeast-2"
     }
   }
 }
