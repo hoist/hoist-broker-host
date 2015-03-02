@@ -153,11 +153,5 @@ describe('ApplicationEvent', function () {
       expect(rabbitPublisher.publish)
         .to.have.been.calledWith(messages[1]);
     });
-    it('publishes a message to sqs (for backwards compatability)', function () {
-      expect(sqsPublisher.publish)
-        .to.have.been.calledWith(messages[0]);
-      expect(sqsPublisher.publish)
-        .to.have.been.calledWith(messages[1]);
-    });
   });
 });
